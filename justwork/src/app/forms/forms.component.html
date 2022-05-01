@@ -1,0 +1,37 @@
+<form [formGroup]="details" (ngSubmit)="onSubmit(details)">
+<div class="column-align">
+    <label >job title</label>
+    <input formControlName="title" type="text">
+</div>
+
+<div class="column-align">
+    <label>Job description</label>
+    <input formControlName="description" type="text">
+</div>
+
+<div class="column-align">
+    <label>salary</label>
+    <input formControlName="salary" type="text">
+</div>
+
+<diV class="column-align">
+    <label>Gender</label>
+    <input formControlName="gender" type="radio">
+</diV>
+
+<div class="column-align">
+    <label >qualification</label>
+    <input formControlName="qualification " type="text">
+</div>
+
+<div class="column-align">
+    <label>skills</label>
+    <input formControlName="skills" type="'text">
+
+
+</div>
+
+
+<button type="submit">Submit</button>
+</form>
+
