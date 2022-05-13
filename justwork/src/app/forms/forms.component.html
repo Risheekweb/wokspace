@@ -1,37 +1,45 @@
-<form [formGroup]="details" (ngSubmit)="onSubmit(details)">
+<form class="p-2" [formGroup]="details" (ngSubmit)="onSubmit(details)">
 <div class="column-align">
     <label >job title</label>
     <input formControlName="title" type="text">
 </div>
 
-<div class="column-align">
-    <label>Job description</label>
-    <input formControlName="description" type="text">
+<div class="column-align formGroup">
+    <label class="form-label">Job description</label>
+    <input class="form-control" formControlName="description" type="text">
 </div>
 
-<div class="column-align">
+<div class="column-align formGroup">
     <label>salary</label>
-    <input formControlName="salary" type="text">
+    <input class="form-control" formControlName="salary" type="text">
 </div>
 
-<diV class="column-align">
+<diV class="column-align formGroup">
     <label>Gender</label>
-    <input formControlName="gender" type="radio">
+    <input class="form-control" formControlName="Male" type="radio">
+    <input class="form-control" formControlName="Female" type="radio">
+    <input class="form-control" formControlName="any" type="radio">
 </diV>
 
-<div class="column-align">
+<div class="column-align formGroup">
     <label >qualification</label>
-    <input formControlName="qualification " type="text">
+    <select class="form-control" formControlName="qualification" >
+        <option  value="intermediate" type="text"></option>
+        <option  value="degree" type="text"></option>
+        <option  value="Noqualification" type="text"></option>
+        <option  value="10th" type="text"></option>
+    </select>
+  
 </div>
 
-<div class="column-align">
+<div class="column-align formGroup">
     <label>skills</label>
-    <input formControlName="skills" type="'text">
+    <input class="form-control" formControlName="skills" type="'text">
 
 
 </div>
 
 
-<button type="submit">Submit</button>
+<button class="btn btn-primary" type="submit">Submit</button>
 </form>
 

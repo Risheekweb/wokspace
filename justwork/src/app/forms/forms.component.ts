@@ -18,7 +18,9 @@ console.log(val)
     this.details= new FormGroup({
       title:new FormControl(""),
       description: new FormControl(""),
-      gender: new FormControl(""),
+      Male: new FormControl(""),
+      Female: new FormControl(""),
+      any: new FormControl(""),
       qualification:new FormControl(""),
       skills: new FormControl(""),
       salary: new FormControl(0)
